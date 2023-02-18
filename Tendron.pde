@@ -1,15 +1,16 @@
-public void setup()
-{
-  size(500, 500);  
-  background(255);
+int len;
+public void setup() {
+  size(750, 750);
+  background(0);
   noLoop();
+  len = 64;
 }
 
-public void draw()
-{
-  background(255);
-  Cluster c = new Cluster(50, 250, 250); // initial number of segments in the tendril and starting (x,y) coordinate
+public void draw() {
+  background(0);
+  Cluster garv = new Cluster(width/2, height/2, len, (float)(Math.random() * 2 * PI));
 }
+
 public void mousePressed()
 {
   redraw();
